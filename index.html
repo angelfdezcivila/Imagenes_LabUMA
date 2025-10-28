@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+</head>
+
+<body>
+    <div id="panorama" style="width: 100%; height: 680px;"></div>
+    <script>
+        pannellum.viewer('panorama', {
+            "default": {
+                "firstScene": "escena_23",
+                "sceneFadeDuration": 1000
+            },
+            "scenes": {
+                "escena_1": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_01.jpg",
+                    "pitch": -15,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw": 31,
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_2"
+                        },
+                           {
+                            "pitch": -5,
+                            "yaw": -8,
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_23"
+                        }                           
+                    ]
+                },
+                "escena_2": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_02.jpg",
+                    "pitch": -15,
+                    "yaw": 2,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -10,
+                            "yaw": 28,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_4"
+                            //"sceneId": "escena_8"
+                            //"sceneId": "escena_35"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 0,   
+                            "type": "info",
+                            "text": "Máquina de propano",
+                            "sceneId": "escena_3"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -35,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_23"
+                        }
+                    ]
+                },
+                "escena_3": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_03.jpg",
+                    "pitch": -15,
+                    "yaw": 2,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -10,
+                            "yaw": 28,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_4"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 0,   
+                            "type": "info",
+                            "text": "Máquina de propano",
+                            "sceneId": "escena_2"
+                        },
+                        {
+                            "pitch": -15,
+                            "yaw": 0,   
+                            "type": "scene",
+                            "text": "Acercarse a la máquina de propano",
+                            "sceneId": "escena_5"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -35,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_23"
+                        }
+                    ]
+                },
+                "escena_4": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_04.jpg",
+                    "pitch": -15,
+                    "yaw": 2,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -10,
+                            "yaw": 28,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_8"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 0,   
+                            "type": "info",
+                            "text": "Máquina de propano",
+                            "sceneId": "escena_2"
+                        },
+                        {
+                            "pitch": -15,
+                            "yaw": 0,   
+                            "type": "scene",
+                            "text": "Acercarse a la máquina de propano",
+                            "sceneId": "escena_5"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -35,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_23"
+                        }
+                    ]
+                },
+                "escena_5": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_05.jpg",
+                    "pitch": -2,
+                    "yaw": -2,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -10,
+                            "yaw": -55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_23"
+                        },
+                        {
+                            "pitch": -10,
+                            "yaw": 40,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_8"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": 180,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_4"
+                        }
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_6": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_06.jpg",
+                    "pitch": -20,
+                    "yaw": 25,
+                    "hfov": 360
+                },
+                //SIN UTILIZAR
+                "escena_7": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_07.jpg",
+                    "pitch": -20,
+                    "yaw":10,
+                    "hfov": 360
+                },
+                "escena_8": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_08.jpg",
+                    "pitch": -15,
+                    "yaw":-10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-30,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_11"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 45,   
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -80,   
+                            "type": "info",
+                            "text": "Máquina de propano",
+                        },
+                        {
+                            "pitch": 12,
+                            "yaw": 5,   
+                            "type": "info",
+                            "text": "Evaporadores",
+                        },
+                        {
+                            "pitch": 10,
+                            "yaw":-40,   
+                            "type": "info",
+                            "text": "Máquina de propano",
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw":-130,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_4"
+                        },
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_9": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_09.jpg",
+                    "pitch": -5,
+                    "yaw":-40,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-90,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -5,   
+                            "type": "info",
+                            "text": "Unidad exterior del equipo comercial R-290",
+                        }
+                    ]
+                },
+                "escena_10": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_10.jpg",
+                    "pitch": -10,
+                    "yaw":-1,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-47,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_8"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw":0,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_11"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw":-20,    
+                            "type": "info",
+                            "text": "Maquina de propano"
+                        },
+                        {
+                            "pitch": 15,
+                            "yaw": 35,   
+                            "type": "info",
+                            "text": "Evaporadores",
+                        },
+                    ]
+                },
+                "escena_11": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_11.jpg",
+                    "pitch": -10,
+                    "yaw":-5,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-37,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_8"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": 2,   
+                            "type": "info",
+                            "text": "Máquina de propano",
+                        },
+                        {
+                            "pitch": 25,
+                            "yaw": -110,   
+                            "type": "info",
+                            "text": "Evaporadores",
+                        }
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_12": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_12.jpg",
+                    "pitch": -15,
+                    "yaw":-5,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":-40,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": -5,
+                            "yaw": -8,   
+                            "type": "info",
+                            "text": "Prototipo 1 R-290",
+                        }
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_13": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_13.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_14": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_14.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_15": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_15.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_16": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_16.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_17": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_17.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_18": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_18.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_19": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_19.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_20": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_20.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_21": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_21.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                "escena_22": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_22.jpg",
+                    "pitch": -5,
+                    "yaw":-3,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":50,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_2"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": 0,   
+                            "type": "info",
+                            "text": "Cuadro eléctrico",
+                            "sceneId": "escena_23"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -60,   
+                            "type": "info",
+                            "text": "Máquina de CO2"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -100,   
+                            "type": "scene",
+                            "sceneId": "escena_29"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -130,   
+                            "type": "scene",
+                            "sceneId": "escena_25"
+                        }    
+                    ]
+                },
+                "escena_23": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_23.jpg",
+                    "pitch": -5,
+                    "yaw":-3,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":50,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_2"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": 0,   
+                            "type": "info",
+                            "text": "Cuadro eléctrico",
+                            "sceneId": "escena_22"
+                        },
+                        {
+                            "pitch": -40,
+                            "yaw": -60,   
+                            "type": "info",
+                            "text": "Máquina de CO2"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -100,   
+                            "type": "scene",
+                            "sceneId": "escena_29"
+                        },
+                        {
+                            "pitch": 0,
+                            "yaw": -130,   
+                            "type": "scene",
+                            "sceneId": "escena_25"
+                        }    
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_24": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_24.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                "escena_25": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_25.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_26": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_26.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_27": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_27.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_28": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_28.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                "escena_29": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_29.jpg",
+                    "pitch": -7,
+                    "yaw":178,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":90,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_23"
+                        },
+                        {
+                            "pitch": -2,
+                            "yaw":60,    
+                            "type": "info",
+                            "text": "Cuadro eléctrico"
+                        },
+                        {
+                            "pitch": -30,
+                            "yaw": 50,   
+                            "type": "info",
+                            "text": "Máquina de CO2",
+                        },
+                        {
+                            "pitch": -7,
+                            "yaw":180,    
+                            "type": "info",
+                            "text": "Cuadro eléctrico"
+                        }      
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_30": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_30.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_31": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_31.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_32": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_32.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_33": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_33.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_34": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_34.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                },
+                //SIN UTILIZAR
+                "escena_35": {
+                    "title": "Instalación",
+                    "type": "equirectangular",
+                    "panorama": "images/LabUMA_35.jpg",
+                    "pitch": -15,
+                    "yaw":10,
+                    "hfov": 360,
+                    "hotSpots": [
+                        {
+                            "pitch": -5,
+                            "yaw":55,    
+                            "type": "scene",
+                            "text": "",
+                            "sceneId": "escena_10"
+                        },
+                        {
+                            "pitch": 5,
+                            "yaw": 20,   
+                            "type": "info",
+                            "text": "Unidad exterior del prototipo 2 R-290",
+                        }        
+                    ]
+                }
+        
+        }
+        });
+    </script>
+
+</body>
+</html>
+
+
